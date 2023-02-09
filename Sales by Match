@@ -1,0 +1,18 @@
+function sockMerchant(n, ar) {
+    // Write your code here
+    // create a var and set it to zero
+    let pairs=0
+    // we need a object to store the counts
+    let paircount = {}
+    //Using foreach method and iterate each numbers 
+    
+    ar.forEach(i => paircount[i] = (paircount[i] || 0 )+1);
+    //Now we have an object with the count details of each number 
+    
+    for(let num of ar){
+        paircount[num]=paircount[num]%2 == 0;
+        pairs = pairs + paircount[num]
+    }
+   return pairs
+  
+}
