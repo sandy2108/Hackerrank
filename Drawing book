@@ -1,0 +1,7 @@
+function pageCount(n, p) {
+    if((n>=1 && n<=100000) && (p<=n && p>=1 )) {
+            let frontside = Math.floor(p/2 );
+            let backside = Math.floor(n/2) - Math.floor(p/2);
+            return Math.min(frontside,backside);
+     }      
+}
