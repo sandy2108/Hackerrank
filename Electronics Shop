@@ -1,0 +1,20 @@
+function getMoneySpent(keyboards, drives, b) {
+    /*
+     * Write your code here.
+     */
+    let price = 0
+    for(let i=0;i<keyboards.length;i++){
+        for(let j=0 ; j<drives.length;j++){
+            let sum = keyboards[i] + drives[j];
+            if((sum > price)&&(sum <= b)){
+                price = sum;
+            }
+        }   
+    }
+    if(price === 0){
+            return -1
+        }
+        else{
+            return price;
+        }
+}
