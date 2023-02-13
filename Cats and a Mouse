@@ -1,0 +1,7 @@
+function catAndMouse(x, y, z) {
+    
+    let catA = Math.abs(z-x)  
+    let catB = Math.abs(z-y)
+    var r=((catA > catB) && (catA != catB)) ? "Cat B" : ((catB> catA) && (catA != catB))? "Cat A": "Mouse C" ; 
+    return r;
+}
